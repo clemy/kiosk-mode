@@ -131,8 +131,9 @@ All the options, excluding `debug_template`, can be set as a boolean and all of 
 |`block_context_menu`                                  | Prevents opening a right-click context menu (sometimes accessible via tap-and-hold on touchscreen devices).|
 |`hide_dialog_header_breadcrumb_navigation`<sup>2</sup>| Hides the breadcrumb navigation over the title of more-info dialogs |
 |`hide_dialog_header_history`                          | Hides the "History" icon in the header of more-info dialogs. |
-|`hide_dialog_header_settings`<sup>3</sup>             | Hides the "Settings" icon in the header of more-info dialogs. |
-|`hide_dialog_header_overflow`<sup>3</sup>             | Hides the top right overflow menu in the header of more-info dialogs. |
+|`hide_dialog_header_add_entity_to`<sup>3</sup>        | Hides the "Add Entity To" icon in the header of more-info dialogs. |
+|`hide_dialog_header_settings`<sup>4</sup>             | Hides the "Settings" icon in the header of more-info dialogs. |
+|`hide_dialog_header_overflow`<sup>4</sup>             | Hides the top right overflow menu in the header of more-info dialogs. |
 |`hide_dialog_header_action_items`                     | Hides all the action items from the header of more-info dialogs. |
 |`hide_dialog_history`                                 | Hides the "History" section in the more-info dialogs. |
 |`hide_dialog_history_show_more`                       | Hides the "Show more" link in the "History" section of more-info dialogs.  |
@@ -150,10 +151,10 @@ All the options, excluding `debug_template`, can be set as a boolean and all of 
 |`hide_dialog_light_control_actions`                   | Hides the control actions in the more-info dialogs of light entities. |
 |`hide_dialog_light_color_actions`                     | Hides the favorite colors actions in the more-info dialogs of light entities. |
 |`hide_dialog_light_settings_actions`                  | Hides the settings actions in the more-info dialogs of light entities. |
-|`ignore_disable_km`<sup>4</sup>                       | Useful for [conditional configs](#conditional-lovelace-config) and will cause `disable_km` URL parameter to be ignored. |
-|`ignore_mobile_settings`<sup>4, 5</sup>               | Useful for [conditional configs](#conditional-lovelace-config) and will cause `mobile_settings` to be ignored. |
-|`debug`<sup>6</sup>                                   | Useful for debugging purposes. Check the [debugging section](#debugging). |
-|`debug_template`<sup>6</sup>                          | Useful for debugging purposes. Check the [debugging section](#debugging). |
+|`ignore_disable_km`<sup>5</sup>                       | Useful for [conditional configs](#conditional-lovelace-config) and will cause `disable_km` URL parameter to be ignored. |
+|`ignore_mobile_settings`<sup>5, 6</sup>               | Useful for [conditional configs](#conditional-lovelace-config) and will cause `mobile_settings` to be ignored. |
+|`debug`<sup>7</sup>                                   | Useful for debugging purposes. Check the [debugging section](#debugging). |
+|`debug_template`<sup>7</sup>                          | Useful for debugging purposes. Check the [debugging section](#debugging). |
 
 <br/>
 
@@ -161,13 +162,15 @@ All the options, excluding `debug_template`, can be set as a boolean and all of 
 >
 ><sup>2</sup> These elements are not clickable if the account is not an admin account.
 >
-><sup>3</sup> These elements are not visible by default if the account is not an admin account.
+><sup>3</sup> These elements are only visible in companion apps (Android).
 >
-><sup>4</sup> These options should be booleans. If you try to set them as a [JavaScript](#javascript-templates) or a [Jinja](#jinja-templates) template, an error will be thrown.
+><sup>4</sup> These elements are not visible by default if the account is not an admin account.
 >
-><sup>5</sup> This option only works if it is placed inside [admin_settings](#admin_settings), [non_admin_settings](#non_admin_settings) or [user_settings](#user_settings). It will not have any effect if it is placed inside [mobile_settings](#mobile_settings).
+><sup>5</sup> These options should be booleans. If you try to set them as a [JavaScript](#javascript-templates) or a [Jinja](#jinja-templates) template, an error will be thrown.
 >
-><sup>6</sup> These options will not change anything in the UI. They will log messages in the browser console.
+><sup>6</sup> This option only works if it is placed inside [admin_settings](#admin_settings), [non_admin_settings](#non_admin_settings) or [user_settings](#user_settings). It will not have any effect if it is placed inside [mobile_settings](#mobile_settings).
+>
+><sup>7</sup> These options will not change anything in the UI. They will log messages in the browser console.
 
 <br/>
 

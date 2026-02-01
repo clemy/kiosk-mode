@@ -121,6 +121,9 @@ export const STYLES = {
 	DIALOG_HEADER_HISTORY: getDisplayNoneRules(
 		`${ELEMENT.HA_DIALOG_HEADER} > ${ELEMENT.MENU_ITEM}[data-selector="${MENU.DIALOG_HISTORY}"]`
 	),
+	DIALOG_HEADER_ADD_ENTITY_TO: getDisplayNoneRules(
+		`${ELEMENT.HA_DIALOG_HEADER} > ${ELEMENT.MENU_ITEM}[data-selector="${MENU.DIALOG_ADD_ENTITY_TO}"]`
+	),
 	DIALOG_HEADER_SETTINGS: getDisplayNoneRules(
 		`${ELEMENT.HA_DIALOG_HEADER} > ${ELEMENT.MENU_ITEM}[data-selector="${MENU.DIALOG_SETTINGS}"]`
 	),

@@ -20,6 +20,7 @@ export enum OPTION {
     HIDE_DIALOG_HEADER_BREADCRUMB_NAVIGATION = 'hide_dialog_header_breadcrumb_navigation',
     HIDE_DIALOG_HEADER_ACTION_ITEMS = 'hide_dialog_header_action_items',
     HIDE_DIALOG_HEADER_HISTORY = 'hide_dialog_header_history',
+    HIDE_DIALOG_HEADER_ADD_ENTITY_TO = 'hide_dialog_header_add_entity_to',
     HIDE_DIALOG_HEADER_SETTINGS = 'hide_dialog_header_settings',
     HIDE_DIALOG_HEADER_OVERFLOW = 'hide_dialog_header_overflow',
     HIDE_DIALOG_HISTORY = 'hide_dialog_history',
@@ -79,6 +80,7 @@ export enum MENU {
     EDIT_DASHBOARD = 'EDIT_DASHBOARD',
     DIALOG_DISMISS = 'DIALOG_DISMISS',
     DIALOG_HISTORY = 'DIALOG_HISTORY',
+    DIALOG_ADD_ENTITY_TO = 'DIALOG_ADD_ENTITY_TO',
     DIALOG_SETTINGS = 'DIALOG_SETTINGS'
 }
 
@@ -92,6 +94,7 @@ export const MENU_REFERENCES = Object.freeze({
 	[MENU.RELOAD_RESOURCES]: `${MENU_PREFIX}.reload_resources`,
 	[MENU.EDIT_DASHBOARD]: `${MENU_PREFIX}.configure_ui`,
 	[MENU.DIALOG_HISTORY]: `${DIALOGS_PREFIX}.history`,
+    [MENU.DIALOG_ADD_ENTITY_TO]: `${DIALOGS_PREFIX}.add_entity_to`,
 	[MENU.DIALOG_SETTINGS]: `${DIALOGS_PREFIX}.settings`,
 	[MENU.DIALOG_DISMISS]: `${COMMON_PREFIX}.close`
 });
